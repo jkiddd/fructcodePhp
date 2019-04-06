@@ -12,9 +12,11 @@
       $addresult = 0;
       $add1 = 20;
       $add2 = 30;
+      // константа
+      define("DBNAME","kinomoster"); 
       $addresult = $add1 + $add2; 
       echo $addresult;
-      
+      echo DBNAME;
    ?>
 <div> Привет, <?php echo $nickname; ?> </div>
  
