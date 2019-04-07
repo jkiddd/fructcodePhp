@@ -43,11 +43,18 @@
       //       break;
       // }   
 
-      $i = 1;
-      while($i <=25) {
-         echo $i."<br>";
-         $i++;
-      }
+      // $i = 1;
+      // while($i <=25) {
+      //    echo $i."<br>";
+      //    $i++;
+      // }
+      // $i = 1;
+      // do {
+      //    echo $i."<br>";
+      //    $i++;
+      // } while ($i <=10);
+
+
 
    ?>
 <div> Привет, <?php echo $nickname; ?> </div>
