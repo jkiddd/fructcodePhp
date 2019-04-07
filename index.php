@@ -18,15 +18,30 @@
       echo $addresult;
       echo DBNAME;
 
-      $svetofor = "red";
+      $svetofor = "yelllow";
 
-      if($svetofor == "green") {
-         echo "  светофор зеленый я перехожу дорогу ";
-      } else {
-         echo "  Жду когда загориться зеленый";
-      }
+      // if($svetofor == "green") {
+      //    echo "  светофор зеленый я перехожу дорогу ";
+      // } else if ($svetofor == "yellow") {
+      //    echo "  сейчас светофор желтый";
+      // } else {
+      //    echo "  Жду когда загориться зеленый";
+      // }
 
-
+      switch ($svetofor) {
+         case 'green':
+               echo "  светофор зеленый я перехожу дорогу ";
+            break;
+         case 'yelllow':
+               echo "  сейчас светофор желтый";
+            break;
+         case 'red':
+            echo "  Жду когда загориться зеленый";
+         break;
+         default:
+                echo "  Светофор не работает";
+            break;
+      }   
 
 
    ?>
