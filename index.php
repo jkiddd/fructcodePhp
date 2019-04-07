@@ -17,6 +17,18 @@
       $addresult = $add1 + $add2; 
       echo $addresult;
       echo DBNAME;
+
+      $svetofor = "red";
+
+      if($svetofor == "green") {
+         echo "  светофор зеленый я перехожу дорогу ";
+      } else {
+         echo "  Жду когда загориться зеленый";
+      }
+
+
+
+
    ?>
 <div> Привет, <?php echo $nickname; ?> </div>
  
