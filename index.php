@@ -8,17 +8,17 @@
 </head>
 <body>
 <?php 
-      $nickname = "Ivan";
-      $addresult = 0;
-      $add1 = 20;
-      $add2 = 30;
-      // константа
-      define("DBNAME","kinomoster"); 
-      $addresult = $add1 + $add2; 
-      echo $addresult;
-      echo DBNAME;
+      // $nickname = "Ivan";
+      // $addresult = 0;
+      // $add1 = 20;
+      // $add2 = 30;
+      // // константа
+      // define("DBNAME","kinomoster"); 
+      // $addresult = $add1 + $add2; 
+      // echo $addresult;
+      // echo DBNAME;
 
-      $svetofor = "yelllow";
+      // $svetofor = "yelllow";
 
       // if($svetofor == "green") {
       //    echo "  светофор зеленый я перехожу дорогу ";
@@ -28,21 +28,26 @@
       //    echo "  Жду когда загориться зеленый";
       // }
 
-      switch ($svetofor) {
-         case 'green':
-               echo "  светофор зеленый я перехожу дорогу ";
-            break;
-         case 'yelllow':
-               echo "  сейчас светофор желтый";
-            break;
-         case 'red':
-            echo "  Жду когда загориться зеленый";
-         break;
-         default:
-                echo "  Светофор не работает";
-            break;
-      }   
+      // switch ($svetofor) {
+      //    case 'green':
+      //          echo "  светофор зеленый я перехожу дорогу ";
+      //       break;
+      //    case 'yelllow':
+      //          echo "  сейчас светофор желтый";
+      //       break;
+      //    case 'red':
+      //       echo "  Жду когда загориться зеленый";
+      //    break;
+      //    default:
+      //           echo "  Светофор не работает";
+      //       break;
+      // }   
 
+      $i = 1;
+      while($i <=25) {
+         echo $i."<br>";
+         $i++;
+      }
 
    ?>
 <div> Привет, <?php echo $nickname; ?> </div>
