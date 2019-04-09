@@ -54,16 +54,23 @@
       //    $i++;
       // } while ($i <=10);
        
-      for ($i=0; $i <=20; $i++) { 
-         echo $i."<br>";
-      }
+      // for ($i=0; $i <=20; $i++) { 
+      //    echo $i."<br>";
+      // }
+         $arr[0]= "продукты";
+         $arr[1] = "бутылка с водой";
+         // echo $arr[1];
+         // print_r($arr);
 
-
+      //  echo  count($arr);
+         for ($i=0; $i < count($arr) ; $i++) { 
+            echo $arr[$i]."<br>";
+         }
    ?>
-<div> Привет, <?php echo $nickname; ?> </div>
+<!-- <div> Привет, <?php echo $nickname; ?> </div> -->
  
 <?php 
-   echo "<div>".$addresult."</div>";
+   // echo "<div>".$addresult."</div>";
 ?>
 
 </body>
