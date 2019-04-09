@@ -63,8 +63,11 @@
          // print_r($arr);
 
       //  echo  count($arr);
-         for ($i=0; $i < count($arr) ; $i++) { 
-            echo $arr[$i]."<br>";
+         // for ($i=0; $i < count($arr) ; $i++) { 
+         //    echo $arr[$i]."<br>";
+         // }
+         foreach ($arr as $key => $value) {
+            echo $value."<br>";
          }
    ?>
 <!-- <div> Привет, <?php echo $nickname; ?> </div> -->
