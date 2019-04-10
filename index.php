@@ -68,6 +68,10 @@
          // }
          // $arr = array("product"=>"продукты","water"=>"буталка с водой", " бутылка без воды");
          $arr = ["Миссия не выполнима","Игра престолов","Интерстеллар","Матрица"];
+
+         $arr2 = array("кокос","арбуз");
+
+         $newarr = array_merge($arr,$arr2);
          // unset($arr[0]);
          array_push($arr,"яблоко");
          array_unshift($arr,"апельсин");
@@ -76,10 +80,18 @@
          $arr = array_reverse($arr);
          // sort($arr);
          shuffle($arr);
-         foreach ($arr as $key => $value) {
+         foreach ( $newarr as $key => $value) {
             echo "Ключ к массиву ".$key. "----" .$value."<br>";
          }
+$str = implode("->", $newarr);
 
+echo "<br>".$str;
+
+$str2 = "молоко, вода, водка, пиво, деньги";
+$strtoarr = explode(",",$str2);
+echo"<pre>";
+print_r($strtoarr);
+echo"</pre>";
    ?>
    <!-- array_chunk	Разбивает массив на несколько меньших массивов заданного размера
 array_combine	Создает массив из двух заданных массивов - массива индексов элементов и массива значений
@@ -124,7 +136,12 @@ pos	Синоним функции current
 reset	Устанавливает внутренний указатель на первый элемент массива
 shuffle	Переставляет элементы массива случайным образом
 sizeof	Синоним функции count -->
-<!-- <div> Привет, <?php echo $nickname; ?> </div> -->
+
+
+
+
+
+<div> Привет, <?php echo $nickname; ?> </div>
  
 <?php 
    // echo "<div>".$addresult."</div>";
